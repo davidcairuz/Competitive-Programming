@@ -1,8 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-#define imprime(x) for(int i = 0; i < 10; i++) cout << x[i] << " "
-
 const int inf = 0x3f3f3f3f;
 vector<int> values;
 int I[1001000];
@@ -41,14 +39,11 @@ int main() {
 	cin >> n;
 
 	for (int i = 0; i < n; ++i) {
-		int x;cin>>x;
+		int x;
+		cin >> x;
 		values.push_back(x);
 	}
 
 	cout << Lis(n) << endl;
 
-	imprime(values);
-	cout << endl;
-	imprime(L);
-    
 }

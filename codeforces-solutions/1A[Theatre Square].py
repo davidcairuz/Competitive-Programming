@@ -1,5 +1,6 @@
 m, n, a = map(int, input().split())
 
+
 if a == n and n == m and a == m:
   heigth = int((m/a) + .9)
   lenght = int((n/a) + .9)

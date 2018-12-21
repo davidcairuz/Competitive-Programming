@@ -6,9 +6,9 @@ using namespace std;
 typedef long long ll;
 
 int main() {
-	int op;
-	while(scanf("%d", &op), op != 0) {
-		float perfect = sqrt(op);
+	ll op;
+	while(scanf("%lld", &op), op != 0) {
+		double perfect = sqrt(op);
 
 		cout << ((perfect - floor(perfect) == 0) ? "yes" : "no");
 		cout << endl;

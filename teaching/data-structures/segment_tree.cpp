@@ -59,6 +59,7 @@ void update(int n, int start, int end, int idx, int new_value) {
 	if(start == end) {
 		values[idx] = new_value;
 		segtree[node] = new_value;
+		return;
 	}
 
 	if(start <= idx and idx <= mid) {

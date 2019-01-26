@@ -31,7 +31,7 @@ int main() {
 		f++;
 
 		double low = 0;
-		double high = 10000000000000;
+		double high = 100000000000000;
 
 		for(int i = 0; i < n; i++) {
 			int r; cin >> r;
@@ -49,7 +49,7 @@ int main() {
 			else low = mid;
 		}
 
-		cout << low << endl;
+		cout << fixed << setprecision(5) << low << endl;
 		v.clear();
 	}
 }

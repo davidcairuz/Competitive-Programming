@@ -1,2 +1,3 @@
 # Competitive Programming
-Algorithms and solved problems
+Algorithms, solved problems and learning materials.
+Everything is in progress.

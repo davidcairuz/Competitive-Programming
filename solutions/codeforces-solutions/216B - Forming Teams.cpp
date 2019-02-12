@@ -9,7 +9,6 @@ bool isCycle = false;
 void dfs(int u, int root, int pred) {
   cnt++;
   vis[u] = 1;
-  // cout << u << endl;
 
   for(int i = 0; i < edges[u].size(); i++) {
     int v = edges[u][i];
@@ -18,7 +17,6 @@ void dfs(int u, int root, int pred) {
 
   for(int i = 0; i < edges[u].size(); i++) {
     if(edges[u][i] == root && root != pred) {
-      // cout << root << endl;
       isCycle = true;
       cnt++;
     }
@@ -40,7 +38,6 @@ int main() {
     if(!vis[i]) {
       dfs(i, i, i);
 
-      // cout << "CONTADOR: " << cnt << endl;
       if (isCycle && cnt % 2 != 0 && cnt != 0) ans++;
       isCycle = false;
       cnt = -1;

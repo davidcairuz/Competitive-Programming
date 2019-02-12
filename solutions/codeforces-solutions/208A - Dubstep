@@ -1,0 +1,9 @@
+remix = input().split("WUB")
+ans = ""
+
+for i in remix:
+	if i != "":
+		ans += i
+		ans += " "
+
+print(ans)

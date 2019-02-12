@@ -10,7 +10,7 @@ typedef long long ll;
 long long play(ll a, ll b) {
 	if(a < b) swap(a, b);
 	if(b == 0) return 0;
-	if(a/b > 1) return 1; // <-------- why?
+	if(a/b > 1) return 1;
 
 	return 1 + play(b, a % b);
 }
